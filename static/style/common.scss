@@ -1,0 +1,52 @@
+.text-center {
+	text-align: center;
+}
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+
+.flex-box {
+	display: flex;
+}
+.flex-mid {
+	align-items: center;
+}
+.flex-center {
+	justify-content: center;
+}
+.flex-between {
+	justify-content: space-between;
+}
+.flex-around {
+	justify-content: space-around;
+}
+.flex-1 {
+	flex: 1;
+}
+.flex-1-h, .flex-1-hidden {
+	flex: 1;
+	overflow: hidden;
+}
+.flex-d-col, .flex-col {
+	flex-direction: column;
+}
+.flex-s-0 {
+	flex-shrink: 0;
+}
+
+@for $spaceKey from 1 through 10 {
+  .m-#{$spaceKey * 5} { margin: ($spaceKey * 5) + rpx; }
+  .m-t-#{$spaceKey * 5} { margin-top: ($spaceKey * 5) + rpx; }
+  .m-b-#{$spaceKey * 5} { margin-bottom: ($spaceKey * 5) + rpx; }
+  .m-l-#{$spaceKey * 5} { margin-left: ($spaceKey * 5) + rpx; }
+  .m-r-#{$spaceKey * 5} { margin-right: ($spaceKey * 5) + rpx; }
+ 
+  .p-#{$spaceKey * 5} { padding: ($spaceKey * 5) + rpx; }
+  .p-t-#{$spaceKey * 5} { padding-top: ($spaceKey * 5) + rpx; }
+  .p-b-#{$spaceKey * 5} { padding-bottom: ($spaceKey * 5) + rpx; }
+  .p-l-#{$spaceKey * 5} { padding-left: ($spaceKey * 5) + rpx; }
+  .p-r-#{$spaceKey * 5} { padding-right: ($spaceKey * 5) + rpx; }
+}
