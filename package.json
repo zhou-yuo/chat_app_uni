@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@vueuse/core": "^11.1.0",
+    "uview-plus": "^3.3.37"
+  }
+}

@@ -1,4 +1,6 @@
 import App from './App'
+import uviewPlus from 'uview-plus'
+import PageHeader from '@/components/page_header/page_header.vue';
 
 // #ifndef VUE3
 import Vue from 'vue'
@@ -15,6 +17,8 @@ app.$mount()
 import { createSSRApp } from 'vue'
 export function createApp() {
   const app = createSSRApp(App)
+  app.use(uviewPlus)
+  app.component('PageHeader', PageHeader)
   return {
     app
   }

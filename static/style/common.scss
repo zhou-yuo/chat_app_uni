@@ -1,3 +1,17 @@
+view, * {
+  box-sizing: border-box;
+}
+
+page {
+  color: #333;
+  font-size: 28rpx;
+}
+
+.c-theme,
+.c-primary {
+  color: $theme-primary-color;
+}
+
 .text-center {
 	text-align: center;
 }

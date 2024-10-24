@@ -1,0 +1,18 @@
+.login-form-group {
+  height: 110rpx;
+  border-radius: 55rpx;
+  background-color: #ebf1f7;
+  padding: 0 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32rpx;
+  .login-form-input {
+    flex: 1;
+    height: 100%;
+    color: #333;
+  }
+  .secrets-btn {
+    margin-left: 20rpx;
+  }
+}
