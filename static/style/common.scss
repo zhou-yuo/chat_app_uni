@@ -64,3 +64,9 @@ page {
   .p-l-#{$spaceKey * 5} { padding-left: ($spaceKey * 5) + rpx; }
   .p-r-#{$spaceKey * 5} { padding-right: ($spaceKey * 5) + rpx; }
 }
+
+.text-overflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

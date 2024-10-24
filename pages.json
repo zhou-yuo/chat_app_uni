@@ -13,6 +13,39 @@
 			"style": {
 				"navigationBarTitleText": "消息",
 				"navigationStyle": "custom",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"scrollIndicator": "none",
+					"titleNView": false,
+					"pullToRefresh": {
+						"style": "circle",
+						"color": "#ff9900"
+					}
+				}
+			}
+		}, {
+			"path": "pages/contacts/contacts",
+			"style": {
+				"navigationBarTitleText": "通讯录",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/discover/discover",
+			"style": {
+				"navigationBarTitleText": "发现",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "我",
+				"navigationStyle": "custom",
 				"app-plus": {
 					"titleNView": false
 				}
@@ -46,6 +79,35 @@
 			}
 		}
 	],
+	"tabBar": {
+    "color": "#333",
+    "selectedColor": "#ff9900",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/message/message",
+        "iconPath": "static/images/tabbar_icon/weui--comment-outlined.png",
+        "selectedIconPath": "static/images/tabbar_icon/weui--comment-filled.png",
+        "text": "消息"
+      },{
+        "pagePath": "pages/contacts/contacts",
+        "iconPath": "static/images/tabbar_icon/weui--contacts-outlined.png",
+        "selectedIconPath": "static/images/tabbar_icon/weui--contacts-filled.png",
+        "text": "通讯录"
+      }, {
+        "pagePath": "pages/discover/discover",
+        "iconPath": "static/images/tabbar_icon/weui--discover-outlined.png",
+        "selectedIconPath": "static/images/tabbar_icon/weui--discover-filled.png",
+        "text": "发现"
+      }, {
+        "pagePath": "pages/user/user",
+        "iconPath": "static/images/tabbar_icon/weui--me-outlined.png",
+        "selectedIconPath": "static/images/tabbar_icon/weui--me-filled.png",
+        "text": "我"
+      }
+    ]
+  },
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

@@ -24,6 +24,10 @@
 import { ref } from "vue"
 import { onClickOutside } from '@vueuse/core'
 
+defineOptions({
+  name: 'DropdownMenu'
+})
+
 // onClickOutside hide menu
 const target = ref(null)
 onClickOutside(target, () => {
@@ -39,7 +43,7 @@ defineProps({
 })
 
 // show
-const show = ref(true)
+const show = ref(false)
 
 // handleToggle
 const handleToggle = () => {

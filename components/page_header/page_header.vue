@@ -3,6 +3,7 @@
     <up-navbar
       :title="title"
       :autoBack="true"
+      :placeholder="true"
       bgColor="#ededed"
     >
     <template #left>
@@ -20,6 +21,10 @@
 
 <script setup>
 import { ref } from "vue"
+
+defineOptions({
+  name: 'CommonPageHeader'
+})
 
 const props = defineProps({
   title: {
